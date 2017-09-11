@@ -1,0 +1,14 @@
+prefix=/Users/guozhigang/Documents/ffmpegStudy/source/code/build/lib/ffmpeg/armv7-a
+exec_prefix=${prefix}
+libdir=/Users/guozhigang/Documents/ffmpegStudy/source/code/build/lib/ffmpeg/armv7-a/lib
+includedir=/Users/guozhigang/Documents/ffmpegStudy/source/code/build/lib/ffmpeg/armv7-a/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 6.94.100
+Requires: 
+Requires.private: libavresample >= 3.6.0, libswscale >= 4.7.101, libpostproc >= 54.6.100, libswresample >= 2.8.100, libavformat >= 57.75.100, libavcodec >= 57.100.103, libavutil >= 55.67.100
+Conflicts:
+Libs: -L${libdir}  -lavfilter 
+Libs.private: -lx264 -lm -lz -pthread -pthread
+Cflags: -I${includedir}

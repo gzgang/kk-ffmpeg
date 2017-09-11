@@ -1,0 +1,14 @@
+prefix=/Users/guozhigang/Documents/ffmpegStudy/source/code/build/lib/ffmpeg/armv7-a
+exec_prefix=${prefix}
+libdir=/Users/guozhigang/Documents/ffmpegStudy/source/code/build/lib/ffmpeg/armv7-a/lib
+includedir=/Users/guozhigang/Documents/ffmpegStudy/source/code/build/lib/ffmpeg/armv7-a/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 55.67.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -lm
+Cflags: -I${includedir}

@@ -1,0 +1,14 @@
+prefix=/Users/guozhigang/Documents/ffmpegStudy/source/code/build/lib/ffmpeg/armv7-a
+exec_prefix=${prefix}
+libdir=/Users/guozhigang/Documents/ffmpegStudy/source/code/build/lib/ffmpeg/armv7-a/lib
+includedir=/Users/guozhigang/Documents/ffmpegStudy/source/code/build/lib/ffmpeg/armv7-a/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 2.8.100
+Requires: 
+Requires.private: libavutil >= 55.67.100
+Conflicts:
+Libs: -L${libdir}  -lswresample 
+Libs.private: -lm
+Cflags: -I${includedir}

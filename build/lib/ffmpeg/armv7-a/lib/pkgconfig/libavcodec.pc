@@ -1,0 +1,14 @@
+prefix=/Users/guozhigang/Documents/ffmpegStudy/source/code/build/lib/ffmpeg/armv7-a
+exec_prefix=${prefix}
+libdir=/Users/guozhigang/Documents/ffmpegStudy/source/code/build/lib/ffmpeg/armv7-a/lib
+includedir=/Users/guozhigang/Documents/ffmpegStudy/source/code/build/lib/ffmpeg/armv7-a/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 57.100.103
+Requires: 
+Requires.private: libavutil >= 55.67.100
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Libs.private: -lx264 -lm -lz -pthread -pthread
+Cflags: -I${includedir}
